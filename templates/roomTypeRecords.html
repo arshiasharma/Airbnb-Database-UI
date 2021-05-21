@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href= "{{ url_for('static',filename='styles/table.css') }}" type="text/css">
+    <link rel="stylesheet" href= "{{ url_for('static',filename='styles/header.css') }}" type="text/css">
+    <link rel="stylesheet" href= "{{ url_for('static',filename='styles/styles.css') }}" type="text/css">
+    <meta name="viewport" content="width=1100">
+  </head>
+  <div class="header">
+    <a href="/" class="logo">Airbnb Crash Course</a>
+    <div class="header-right">
+      <a" href="/">Home</a>
+      <a href="/host">Host</a>
+      <a href="/customer">Customer</a>
+    </div>
+  </div>
+  <center>
+  <br>
+  
+  <h2>Room Type Page</h2>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Room Type Id</th>
+          <th scope="col">Room Type</th>
+        </tr>
+      </thead>
+      {% for row in results %}
+      <tbody>
+        <tr>
+          <td>{{ row[0] }}</td>
+          <td>{{ row[1] }}</td>
+        </tr>
+      </tbody>
+      {% endfor %}
+    </table>
+</html>
+

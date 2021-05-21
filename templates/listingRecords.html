@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href= "{{ url_for('static',filename='styles/table.css') }}" type="text/css">
+    <link rel="stylesheet" href= "{{ url_for('static',filename='styles/header.css') }}" type="text/css">
+    <link rel="stylesheet" href= "{{ url_for('static',filename='styles/styles.css') }}" type="text/css">
+    <meta name="viewport" content="width=1100">
+  </head>
+  <div class="header">
+    <a href="/" class="logo">Airbnb Crash Course</a>
+    <div class="header-right">
+      <a  href="/">Home</a>
+      <a href="/host">Host</a>
+      <a href="/customer">Customer</a>
+    </div>
+  </div>
+  <center>
+  <h2>Host Page</h2>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">URL</th>
+          <th scope="col">Name</th>
+          <th scope="col">Summary</th>
+          <th scope="col">Notes</th>
+          <th scope="col">Transit</th>
+          <th scope="col">Host Id</th>
+          <th scope="col">Location Id</th>
+          <th scope="col">Room Id</th>
+          <th scope="col">Price</th>
+          <th scope="col">Cancellation</th>
+        </tr>
+      </thead>
+      {% for row in results %}
+      <tbody>
+        <tr>
+          <td>{{ row[0] }}</td>
+          <td><a href={{row[1]}} target="_blank">{{ row[1] }}</td>
+          <td>{{ row[2] }}</td>
+          <td>{{ row[3] }}</td>
+          <td>{{ row[4] }}</td>
+          <td>{{ row[5] }}</td>
+          <td>{{ row[6] }}</td>
+          <td>{{ row[7] }}</td>
+          <td>{{ row[8] }}</td>
+          <td>{{ row[9] }}</td>
+          <td>{{ row[10] }}</td>
+        </tr>
+      </tbody>
+      {% endfor %}
+    </table>
+</html>

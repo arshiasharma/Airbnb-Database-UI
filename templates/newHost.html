@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href= "{{ url_for('static',filename='styles/table.css') }}" type="text/css">
+    <link rel="stylesheet" href= "{{ url_for('static',filename='styles/header.css') }}" type="text/css">
+    <link rel="stylesheet" href= "{{ url_for('static',filename='styles/styles.css') }}" type="text/css">
+    <meta name="viewport" content="width=1100">
+  </head>
+  <div class="header">
+    <a href="/" class="logo">Airbnb Crash Course</a>
+    <div class="header-right">
+      <a  href="/">Home</a>
+      <a href="/host">Host</a>
+      <a href="/customer">Customer</a>
+    </div>
+  </div>
+  <center>
+    <br><br>
+  <h2>Let's Get Started!</h2>
+    <br><br>
+    <div class="row">
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="col-lg-11">
+          <div class="card h-100">
+              <div class="card-body">
+                <center><h3>Lets Enter Some Information!</h3></center>
+                <form action="/host/" method="POST">
+                  <div class="row">
+                    <div>
+                      <br>
+                      <center>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label for="name">Name: </label>
+                        &nbsp;&nbsp;
+                        <input type="text" id="name" name="name">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label for="date">Host Since: </label>
+                        &nbsp;&nbsp;
+                        <input type="date" id="date" name="date">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label for="about">About: </label>
+                        &nbsp;&nbsp;
+                        <input type="textarea" id="about" name="about">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label for="respTime">Response Time: </label>
+                        &nbsp;&nbsp;
+                        <select id="respTime" name="respTime">
+                          <option value="within an hour" id="within an hour" name="within an hour">within an hour</option>
+                          <option value="within a few hours" id="within a few hours" name="within a few hours">within a few hours</option>
+                        </select>
+                        <br><br>
+                        <label for="superhost">Superhost: </label>
+                        &nbsp;&nbsp;
+                        <select id="superhost" name="superhost">
+                          <option value="t" id="t" name="t">True</option>
+                          <option value="f" id="f" name="f">False</option>
+                        </select>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label for="neighbourhood">Neighbourhood: </label>
+                        &nbsp;&nbsp;
+                        <select id="neighbourhood" name="neighbourhood">
+                          {% for row in results %}
+                          <option value={{ row[0] }} id={{ row[0] }} name={{ row[0] }}>{{ row[1] }}</option>
+                          {% endfor %}
+                        </select>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label for="listing_count">Listing Count: </label>
+                        &nbsp;&nbsp;
+                        <input type="number" id="listing_count" name="listing_count">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label for="idverify">Id Verified: </label>
+                        &nbsp;&nbsp;
+                        <select id="idverify" name="idverify">
+                          <option value="t" id="t" name="t">True</option>
+                          <option value="f" id="f" name="f">False</option>
+                        </select>
+                        </center>
+                    </div>
+                  </div>
+                  <br>
+                  <center><input type="submit" value="Submit"></center>
+                </form>
+              </div>
+          </div>
+      </div>
+  </center>
+  <br><br>
+</html>

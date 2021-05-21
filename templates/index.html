@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href= "{{ url_for('static',filename='styles/header.css') }}" type="text/css">
+    <link rel="stylesheet" href= "{{ url_for('static',filename='styles/styles.css') }}" type="text/css">
+  </head>
+  <div class="header">
+    <a href="" class="logo">Airbnb Crash Course</a>
+    <div class="header-right">
+      <a href="/">Home</a> 
+      <a href="/host">Host</a>
+      <a href="/customer">Customer</a>
+    </div>
+  </div>
+  <body>
+     <div class="container">
+            <!-- Heading Row-->
+            <div class="row align-items-center my-5">
+                <div class="col-lg-7"><img class="img-fluid rounded mb-2 mb-lg-0" src="https://media-doppleronline-ca.s3-accelerate.amazonaws.com/2019/08/Airbnb-stock-photo.jpg" alt="..." /></div>
+                <div class="col-lg-5">
+                    <h1 class="font-weight-light">Our Mission!</h1>
+                    <p>Whether you are an Airbnb host wanting to learn more about your fellow hosts
+                       or a customer looking for a place to stay, this site is for you! General Organa  
+                      placed information vital to the survival of the Airbnb hosts and comfort for customers
+                    into the memory system of this R2 units. Users, as yourself, will able able to retrieve it. 
+                  This is you most desperate hour to find or improve your listing, and this application will help! </p>
+                    <a class="btn btn-primary" href="https://www.airbnb.com/a/stays/Seattle--Washington--United-States?af=43720035&c=.pi0.pk25650614896_253771691915_c_64178506137&sem_position=&sem_target=kwd-64178506137&location_of_interest=&location_physical=9031580&localized_ghost=true&query=&gclid=CjwKCAjw1uiEBhBzEiwAO9B_HU0kCH8X_EFJxzo_6oMH2-l8CSgLHLpUm8mTIHqwGxROXeutV1lpRxoCmIkQAvD_BwE" target="_blank">Airbnb Seattle</a>
+                    &nbsp;&nbsp;
+                    <a class="btn btn-primary" href="https://drive.google.com/file/d/1SkVYEzo0o9rd1GxyC5-tCRZo5SRkzfJY/view?usp=sharing" target="_blank">Schema</a>
+
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-md-6 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <img class="img-fluid rounded mb-2 mb-lg-0" src="https://images.fastcompany.net/image/upload/w_596,c_limit,q_auto:best,f_auto/fc/3033130-inline-airbnbkeychain01.jpg" alt="..." />
+                          </div>
+                            <center><div class="card-footer"><a class="btn btn-success btn-lg" href="/host">Hosts</a></div></center>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                          <img class="img-fluid rounded mb-4 mb-lg-0" src="https://www.airbnbsecrets.com/wp-content/uploads/2016/12/Airbnb-co-host.jpg" alt="..." />
+                        </div>
+                          <center><div class="card-footer"><a class="btn btn-info btn-lg" href="/customer">Customers</a></div></center>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; LuckySharms 2021</p></div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href= "{{ url_for('static',filename='styles/table.css') }}" type="text/css">
+    <link rel="stylesheet" href= "{{ url_for('static',filename='styles/header.css') }}" type="text/css">
+    <link rel="stylesheet" href= "{{ url_for('static',filename='styles/styles.css') }}" type="text/css">
+    <meta name="viewport" content="width=1100">
+  </head>
+  <div class="header">
+    <a href="/" class="logo">Airbnb Crash Course</a>
+    <div class="header-right">
+      <a  href="/">Home</a>
+      <a href="/host">Host</a>
+      <a href="/customer">Customer</a>
+    </div>
+  </div>
+  <center>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                <span>{{ message }}</span>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+  <h2>Review Page</h2>
+  <br>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Review Id</th>
+          <th scope="col">Listing Id</th>
+          <th scope="col">Date</th>
+          <th scope="col">Reviewer Name</th>
+          <th scope="col">Comments</th>
+        </tr>
+      </thead>
+      {% for row in results %}
+      <tbody>
+        <tr>
+          <td>{{ row[0] }}</td>
+          <td>{{ row[1] }}</td>
+          <td>{{ row[2] }}</td>
+          <td>{{ row[7] }}</td>
+          <td>{{ row[4] }}</td>
+        </tr>
+      </tbody>
+      {% endfor %}
+    </table>
+</html>
