@@ -17,19 +17,19 @@ All requirements were met and comments were made as to where they happened.
 Note: If a url does not work from Airbnb, that is because the listing was taken down
 
 Sources:
-Flask Intro: https://www.codementor.io/@adityamalviya/python-flask-mysql-connection-rxblpje73
-https://thenucleargeeks.com/2020/06/05/python-flask-mysql-connection/
-https://www.askpython.com/python-modules/flask/flask-mysql-database
-Bootstrap css: https://bootswatch.com/pulse/
-https://learn.shayhowe.com/html-css/organizing-data-with-tables/
-Pop-up messages: https://stackoverflow.com/questions/26080872/secret-key-not-set-in-flask-session-using-the-flask-session-extension
-https://pythonise.com/series/learning-flask/flask-message-flashing
-Transactions in Flask: https://pynative.com/python-mysql-transaction-management-using-commit-rollback/
-https://overiq.com/mysql-connector-python-101/handling-transactions-with-connector-python/
-https://pynative.com/python-mysql-transaction-management-using-commit-rollback/
-Views: https://www.guru99.com/views.html
-https://www.mysqltutorial.org/mysql-views/mysql-drop-view/
-https://bugs.mysql.com/bug.php?id=49173
-Index: https://www.mysqltutorial.org/mysql-index/mysql-create-index/
-Replace: https://wordpress.stackexchange.com/questions/6636/how-can-i-sql-update-a-meta-value-to-remove-the-dollar-signs-that-were-entered-w
-Random Tuple: https://www.mysqltutorial.org/select-random-records-database-table.aspx#:~:text=MySQL%20does%20not%20have%20any,use%20the%20RAND()%20function.&text=Let's%20examine%20the%20query%20in,each%20row%20in%20the%20table.
+* Flask Intro: https://www.codementor.io/@adityamalviya/python-flask-mysql-connection-rxblpje73
+  * https://thenucleargeeks.com/2020/06/05/python-flask-mysql-connection/
+  * https://www.askpython.com/python-modules/flask/flask-mysql-database
+* Bootstrap css: https://bootswatch.com/pulse/
+  *https://learn.shayhowe.com/html-css/organizing-data-with-tables/
+* Pop-up messages: https://stackoverflow.com/questions/26080872/secret-key-not-set-in-flask-session-using-the-flask-session-extension
+  * https://pythonise.com/series/learning-flask/flask-message-flashing
+* Transactions in Flask: https://pynative.com/python-mysql-transaction-management-using-commit-rollback/
+  * https://overiq.com/mysql-connector-python-101/handling-transactions-with-connector-python/
+  * https://pynative.com/python-mysql-transaction-management-using-commit-rollback/
+* Views: https://www.guru99.com/views.html
+  * https://www.mysqltutorial.org/mysql-views/mysql-drop-view/
+  * https://bugs.mysql.com/bug.php?id=49173
+* Index: https://www.mysqltutorial.org/mysql-index/mysql-create-index/
+* Replace: https://wordpress.stackexchange.com/questions/6636/how-can-i-sql-update-a-meta-value-to-remove-the-dollar-signs-that-were-entered-w
+* Random Tuple: https://www.mysqltutorial.org/select-random-records-database-table.aspx#:~:text=MySQL%20does%20not%20have%20any,use%20the%20RAND()%20function.&text=Let's%20examine%20the%20query%20in,each%20row%20in%20the%20table.
